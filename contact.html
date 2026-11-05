@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — BuildCraft Architecture & Construction Inquiry</title>
+  <meta name="description" content="Let's build something great together. Get in touch with our architectural and construction team.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- Preview Simulator Bar -->
+  <div class="preview-control-bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        BuildCraft Redesign &bull; Contact Us Page
+      </span>
+      <div class="preview-viewports">
+        <button class="viewport-btn active" data-viewport="desktop">Desktop</button>
+        <button class="viewport-btn" data-viewport="tablet">Tablet (768px)</button>
+        <button class="viewport-btn" data-viewport="mobile">Mobile (390px)</button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <button id="theme-toggle-btn" class="theme-toggle-btn"><span>🌙</span> Dark Obsidian</button>
+    </div>
+  </div>
+
+  <div id="viewport-stage">
+    <!-- Navigation -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon-house">🏛️</div>
+            <div class="brand-title-group">
+              <span class="brand-title">BuildCraft</span>
+              <span class="brand-tagline">Build Better. Live Better.</span>
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item"><a href="services.html">Services</a></li>
+              <li class="nav-item"><a href="portfolio.html">Projects</a></li>
+              <li class="nav-item active"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-gold btn-sm">Get a Quote &rarr;</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-drawer-header" style="display:flex; justify-content:space-between; align-items:center;">
+          <div class="brand-logo">
+            <div class="brand-icon-house">🏛️</div>
+            <div class="brand-title-group">
+              <span class="brand-title">BuildCraft</span>
+              <span class="brand-tagline">Build Better. Live Better.</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" style="background:none; border:none; font-size:1.8rem; color:#fff; cursor:pointer;">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-gold" style="width: 100%; text-align: center;">Get a Free Quote &rarr;</a>
+      </div>
+    </aside>
+
+    <!-- HERO SECTION (Full-Page Hero Banner - Exact Attachment 1 Match) -->
+    <section class="subpage-hero-banner subpage-hero-contact">
+      <div class="container container-wide">
+        <div class="subpage-hero-content">
+          <div class="badge-tag">Let's Connect</div>
+          <h1 class="hero-arch-title">
+            Contact Us &bull; <span class="serif-italic">Let's Build Something Great Together</span>
+          </h1>
+          <p class="hero-arch-desc" style="max-width: 680px;">
+            We would love to hear from you. Reach out to schedule a private architectural consultation, discuss land feasibility, or receive an itemized construction quote.
+          </p>
+          <div class="hero-actions-row">
+            <a href="#contact-form-section" class="btn btn-gold">Send a Message &darr;</a>
+            <a href="tel:+15551234567" class="btn btn-secondary">📞 Call (555) 123-4567</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Form Grid Section -->
+    <section id="contact-form-section" style="padding: var(--space-5xl) 0; background: var(--bg-primary);">
+      <div class="container container-wide">
+        <div style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--space-4xl); align-items: start;">
+          
+          <!-- Contact Form -->
+          <div style="background:var(--bg-secondary); border:1px solid var(--border-medium); border-radius:var(--radius-xl); padding:var(--space-3xl); box-shadow:var(--shadow-elevated);">
+            <div class="badge-tag" style="margin-bottom:12px;">Direct Dispatch</div>
+            <h2 style="font-size: 2rem; color:#fff; margin-bottom: 8px;">Get in Touch</h2>
+            <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:var(--space-2xl);">
+              Complete the brief form below and our lead project director will respond within 4 business hours.
+            </p>
+
+            <form onsubmit="event.preventDefault(); showToast('✓ Message transmitted! We will contact you shortly.'); this.reset();">
+              <div style="margin-bottom: var(--space-lg);">
+                <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:8px; color:#fff;">Your Name</label>
+                <input type="text" class="form-control" placeholder="e.g. Julian Vance" required style="background:#0a0d14; border:1px solid rgba(255,255,255,0.14); border-radius:10px; padding:14px 18px; color:#fff; width:100%;">
+              </div>
+
+              <div style="margin-bottom: var(--space-lg);">
+                <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:8px; color:#fff;">Your Email</label>
+                <input type="email" class="form-control" placeholder="julian@enterprise.com" required style="background:#0a0d14; border:1px solid rgba(255,255,255,0.14); border-radius:10px; padding:14px 18px; color:#fff; width:100%;">
+              </div>
+
+              <div style="margin-bottom: var(--space-xl);">
+                <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:8px; color:#fff;">Your Message</label>
+                <textarea rows="5" class="form-control" placeholder="Tell us about your property, desired timeline, or architectural requirements..." required style="background:#0a0d14; border:1px solid rgba(255,255,255,0.14); border-radius:10px; padding:14px 18px; color:#fff; width:100%; font-family:var(--font-sans);"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-lg" style="width:100%;">Send Message &rarr;</button>
+            </form>
+          </div>
+
+          <!-- Studio Coordinates & Map Preview -->
+          <div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border-medium); border-radius:var(--radius-xl); padding:var(--space-2xl); margin-bottom:var(--space-2xl); box-shadow:var(--shadow-elevated);">
+              <h3 style="font-size:1.3rem; color:#fff; margin-bottom:18px;">Headquarters & Contact</h3>
+              
+              <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
+                <div style="width:44px; height:44px; border-radius:12px; background:rgba(229,169,60,0.12); color:var(--gold-primary); display:flex; align-items:center; justify-content:center; font-size:1.2rem;">📞</div>
+                <div>
+                  <span style="display:block; font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Phone Hotline</span>
+                  <strong style="color:#fff; font-size:0.95rem;">+1 (555) 123-4567</strong>
+                </div>
+              </div>
+
+              <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
+                <div style="width:44px; height:44px; border-radius:12px; background:rgba(229,169,60,0.12); color:var(--gold-primary); display:flex; align-items:center; justify-content:center; font-size:1.2rem;">✉️</div>
+                <div>
+                  <span style="display:block; font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Email Inquiries</span>
+                  <strong style="color:#fff; font-size:0.95rem;">hello@buildcraft.com</strong>
+                </div>
+              </div>
+
+              <div style="display:flex; align-items:center; gap:16px;">
+                <div style="width:44px; height:44px; border-radius:12px; background:rgba(229,169,60,0.12); color:var(--gold-primary); display:flex; align-items:center; justify-content:center; font-size:1.2rem;">📍</div>
+                <div>
+                  <span style="display:block; font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Office Location</span>
+                  <strong style="color:#fff; font-size:0.95rem;">123 Construction Way, New York, NY 10001</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Architectural Studio Preview -->
+            <div style="background:var(--bg-secondary); border:1px solid var(--border-medium); border-radius:var(--radius-xl); overflow:hidden; box-shadow:var(--shadow-elevated);">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" 
+                   alt="Studio Building" style="width:100%; height:200px; object-fit:cover; display:block;">
+              <div style="padding:16px 20px; display:flex; justify-content:space-between; align-items:center; background:#0f141f;">
+                <div>
+                  <strong style="display:block; font-size:0.9rem; color:#fff;">Manhattan Flagship Studio</strong>
+                  <span style="font-size:0.75rem; color:var(--text-secondary);">Open Monday &mdash; Friday, 8am &mdash; 7pm EST</span>
+                </div>
+                <span class="badge-tag" style="margin-bottom:0;">Live Map</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer-arch">
+      <div class="container container-wide">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+          <div>&copy; 2026 BuildCraft. All Rights Reserved.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="index.html" style="color:var(--text-secondary); text-decoration:none;">Home</a>
+            <a href="about.html" style="color:var(--text-secondary); text-decoration:none;">About</a>
+            <a href="services.html" style="color:var(--text-secondary); text-decoration:none;">Services</a>
+            <a href="portfolio.html" style="color:var(--gold-primary); text-decoration:none;">Projects</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

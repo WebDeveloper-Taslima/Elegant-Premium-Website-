@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System & Handover Specification — VANGUARD ATELIER</title>
+  <meta name="description" content="Official design handover manual covering typography hierarchy, color tokens, 8-point spacing, and reusable UI components.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Preview Simulator Bar -->
+  <div class="preview-control-bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        Vanguard Atelier &bull; Deliverable #4: Design Handover Specs
+      </span>
+      <div class="preview-viewports">
+        <button class="viewport-btn active" data-viewport="desktop">Desktop</button>
+        <button class="viewport-btn" data-viewport="tablet">Tablet (768px)</button>
+        <button class="viewport-btn" data-viewport="mobile">Mobile (390px)</button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <button id="theme-toggle-btn" class="theme-toggle-btn"><span>🌙</span> Dark Obsidian</button>
+    </div>
+  </div>
+
+  <div id="viewport-stage">
+    <!-- Navigation -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html">Overview</a></li>
+              <li class="nav-item"><a href="about.html">Heritage</a></li>
+              <li class="nav-item"><a href="services.html">Capabilities</a></li>
+              <li class="nav-item"><a href="portfolio.html">Showcase</a></li>
+              <li class="nav-item active"><a href="design-system.html">Design System</a></li>
+              <li class="nav-item"><a href="contact.html">Private Booking</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-primary btn-sm">Request Redesign</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" class="mobile-close-btn">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="about.html">Heritage</a></li>
+          <li><a href="services.html">Capabilities</a></li>
+          <li><a href="portfolio.html">Showcase</a></li>
+          <li><a href="design-system.html">Design System</a></li>
+          <li><a href="contact.html">Private Booking</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Book Consultation</a>
+      </div>
+    </aside>
+
+    <!-- Page Header -->
+    <section style="padding: var(--space-4xl) 0 var(--space-2xl) 0; border-bottom: 1px solid var(--border-subtle); background: var(--bg-surface);">
+      <div class="container text-center">
+        <div class="badge-pill">Client Deliverable #4 Specification</div>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 16px;">
+          Design System & <span class="text-gold">Handover Manual</span>
+        </h1>
+        <p class="section-desc" style="max-width: 760px; margin: 0 auto;">
+          This specification document governs all fonts, color tokens, 8-point spacing metrics, responsive breakpoints, and UI component behavior for consistent, high-fidelity development.
+        </p>
+      </div>
+    </section>
+
+    <!-- Handover System Core -->
+    <section class="handover-section">
+      <div class="container">
+        <div class="handover-card">
+          <!-- Tabs Navigation -->
+          <div class="handover-tabs">
+            <button class="handover-tab-btn active" data-target="tab-colors">01 / Color Tokens</button>
+            <button class="handover-tab-btn" data-target="tab-typography">02 / Typography Hierarchy</button>
+            <button class="handover-tab-btn" data-target="tab-spacing">03 / 8-Point Spacing</button>
+            <button class="handover-tab-btn" data-target="tab-components">04 / UI Components</button>
+            <button class="handover-tab-btn" data-target="tab-figma">05 / Figma & XD Architecture</button>
+          </div>
+
+          <!-- Tab 1: Colors -->
+          <div id="tab-colors" class="handover-tab-pane active">
+            <h3 style="font-size:1.4rem; margin-bottom:8px;">Core Brand Palette (Click to Copy Hex)</h3>
+            <p style="margin-bottom: var(--space-xl); font-size: 0.9rem; color: var(--text-secondary);">
+              Constructed to deliver timeless elegance in both Royal Obsidian Dark and Alabaster Gold Light environments.
+            </p>
+            <div class="color-swatch-grid">
+              <div class="color-swatch-card" data-hex="#0A0B0E">
+                <div class="swatch-color-box" style="background: #0A0B0E; border-bottom: 1px solid rgba(255,255,255,0.1);"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Obsidian Deep (Background)</div>
+                  <div class="swatch-hex"><span>#0A0B0E</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#12141A">
+                <div class="swatch-color-box" style="background: #12141A;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Graphite Secondary</div>
+                  <div class="swatch-hex"><span>#12141A</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#181B24">
+                <div class="swatch-color-box" style="background: #181B24;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Surface Card</div>
+                  <div class="swatch-hex"><span>#181B24</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#D4AF37">
+                <div class="swatch-color-box" style="background: #D4AF37;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Champagne Gold (Primary)</div>
+                  <div class="swatch-hex"><span>#D4AF37</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#F5D77F">
+                <div class="swatch-color-box" style="background: #F5D77F;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Champagne Shimmer</div>
+                  <div class="swatch-hex"><span>#F5D77F</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#FCFCFD">
+                <div class="swatch-color-box" style="background: #FCFCFD;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Alabaster Pearl (Heading Text)</div>
+                  <div class="swatch-hex" style="color:#000;"><span>#FCFCFD</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#A6ADBB">
+                <div class="swatch-color-box" style="background: #A6ADBB;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Warm Slate (Body Text)</div>
+                  <div class="swatch-hex"><span>#A6ADBB</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#10B981">
+                <div class="swatch-color-box" style="background: #10B981;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Emerald Success</div>
+                  <div class="swatch-hex"><span>#10B981</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Typography Scale -->
+          <div id="tab-typography" class="handover-tab-pane">
+            <h3 style="font-size:1.4rem; margin-bottom:8px;">Harmonic Typographic Scale</h3>
+            <p style="margin-bottom: var(--space-xl); font-size: 0.9rem; color: var(--text-secondary);">
+              Curated font pairings balancing classical editorial beauty with contemporary legibility across all screen densities.
+            </p>
+            <table class="type-specimen-table">
+              <thead>
+                <tr>
+                  <th>Role / Style</th>
+                  <th>Font Family</th>
+                  <th>Size / Line Height</th>
+                  <th>Tracking</th>
+                  <th>Sample</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Display 01 (Hero Title)</strong></td>
+                  <td>Cinzel / Cormorant</td>
+                  <td>48px - 72px / 1.1</td>
+                  <td>-0.025em</td>
+                  <td><span style="font-family:var(--font-serif); font-size:1.8rem;">Modern Digital Elegance</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Heading 02 (Section Title)</strong></td>
+                  <td>Cormorant Garamond</td>
+                  <td>36px - 44px / 1.2</td>
+                  <td>-0.02em</td>
+                  <td><span style="font-family:var(--font-serif); font-size:1.4rem;">Architectural Spacing</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Heading 03 (Card Title)</strong></td>
+                  <td>Cinzel / Serif</td>
+                  <td>22px - 26px / 1.3</td>
+                  <td>-0.015em</td>
+                  <td><span style="font-family:var(--font-display); font-size:1.15rem;">Bespoke Deliverables</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Body Primary</strong></td>
+                  <td>Plus Jakarta Sans</td>
+                  <td>16px / 1.7</td>
+                  <td>0</td>
+                  <td><span style="font-family:var(--font-sans); color:var(--text-secondary);">Every component communicates high-end brand value.</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Monospace / Meta Badges</strong></td>
+                  <td>Space Grotesk</td>
+                  <td>12px / 1.4</td>
+                  <td>+0.12em (Uppercase)</td>
+                  <td><span style="font-family:var(--font-mono); color:var(--gold-primary);">FIGMA.TOKEN.2026</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Tab 3: Spacing Scale -->
+          <div id="tab-spacing" class="handover-tab-pane">
+            <h3 style="font-size:1.4rem; margin-bottom:8px;">8-Point Mathematical Grid System</h3>
+            <p style="margin-bottom: var(--space-xl); font-size: 0.9rem; color: var(--text-secondary);">
+              All margins, paddings, and line heights are multiples of 8px (with 4px for fine sub-grid alignments) ensuring rhythm and visual calm.
+            </p>
+            <div class="spacing-scale-visualizer">
+              <div class="spacing-row">
+                <div class="spacing-label">--space-2xs (4px)</div>
+                <div class="spacing-bar" style="width: 4px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Micro spacing, pill tags, badges</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-xs (8px)</div>
+                <div class="spacing-bar" style="width: 8px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Base unit, icon gaps, subtle borders</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-md (16px)</div>
+                <div class="spacing-bar" style="width: 16px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Form controls, default input padding</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-lg (24px)</div>
+                <div class="spacing-bar" style="width: 24px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Card inner margins, button heights</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-xl (32px)</div>
+                <div class="spacing-bar" style="width: 32px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Grid gaps, block separation</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-2xl (48px)</div>
+                <div class="spacing-bar" style="width: 48px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Section inner spacing</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-4xl (96px)</div>
+                <div class="spacing-bar" style="width: 96px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Hero and section vertical rhythm</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: UI Components -->
+          <div id="tab-components" class="handover-tab-pane">
+            <h3 style="font-size:1.4rem; margin-bottom:8px;">Reusable UI Components & Interactive States</h3>
+            <p style="margin-bottom: var(--space-xl); font-size: 0.9rem; color: var(--text-secondary);">
+              Production-ready atomic elements including hover micro-interactions, focus rings, and active states.
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap: var(--space-2xl);">
+              <!-- Buttons -->
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:12px; color:var(--gold-primary);">Button Hierarchy</h4>
+                <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
+                  <button class="btn btn-primary">Primary Gold Button</button>
+                  <button class="btn btn-secondary">Secondary Glass Button</button>
+                  <button class="btn btn-outline">Outline Gold Button</button>
+                  <button class="btn btn-primary btn-sm">Small Button</button>
+                </div>
+              </div>
+
+              <!-- Form Inputs -->
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:12px; color:var(--gold-primary);">Form Controls</h4>
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+                  <div>
+                    <label class="form-label">Default State</label>
+                    <input type="text" class="form-control" placeholder="Placeholder text...">
+                  </div>
+                  <div>
+                    <label class="form-label">Active / Focused State</label>
+                    <input type="text" class="form-control" value="Subtle gold glow on focus" style="border-color:var(--gold-primary); box-shadow:0 0 0 3px var(--gold-glow);">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Badges & Chips -->
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:12px; color:var(--gold-primary);">Editorial Badges</h4>
+                <div style="display:flex; gap:12px; flex-wrap:wrap;">
+                  <span class="badge-pill">Bespoke Architecture</span>
+                  <span class="badge-pill" style="border-color:var(--success); color:var(--success);">Verified Impact</span>
+                  <span class="badge-pill" style="border-color:var(--accent-cyan); color:var(--accent-cyan);">Responsive 60fps</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 5: Figma & Adobe XD Structure -->
+          <div id="tab-figma" class="handover-tab-pane">
+            <h3 style="font-size:1.4rem; margin-bottom:8px;">Organized Figma / Adobe XD Structure</h3>
+            <p style="margin-bottom: var(--space-xl); font-size: 0.9rem; color: var(--text-secondary);">
+              Clear layer naming conventions, auto-layout constraints, and standardized component naming.
+            </p>
+
+            <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:var(--space-xl); font-family:var(--font-mono); font-size:0.85rem; line-height:1.9;">
+              <span style="color:var(--gold-primary);">📦 [PROJECT] Vanguard Atelier - Premium Redesign</span><br>
+              &nbsp;&nbsp;├── 📄 01. Cover & Overview (Design brief, scope, device manifests)<br>
+              &nbsp;&nbsp;├── 🎨 02. Foundations (Tokens: Colors, Typography, 8pt Grid, Shadows, Icons)<br>
+              &nbsp;&nbsp;├── 🧩 03. Components (Buttons, Navigation, Cards, Modals, Forms with Variants)<br>
+              &nbsp;&nbsp;├── 🖥️ 04. Desktop Layouts (1440px Artboards: Home, About, Services, Portfolio, Contact)<br>
+              &nbsp;&nbsp;├── 📱 05. Mobile & Tablet (390px & 768px Artboards with Touch targets & drawers)<br>
+              &nbsp;&nbsp;└── 🚀 06. Developer Handover (Export assets, CSS variables, Redline specs)
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-4xl);">
+          <a href="contact.html" class="btn btn-primary btn-lg">Schedule Handover Consultation &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom-bar">
+          <div>&copy; 2026 VANGUARD ATELIER. Built for Guaranteed Brand Elevation.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="index.html" style="color:var(--text-muted); text-decoration:none;">Overview</a>
+            <a href="contact.html" style="color:var(--gold-primary); text-decoration:none;">Request Proposal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

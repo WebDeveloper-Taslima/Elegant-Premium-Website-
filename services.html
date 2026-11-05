@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — BuildCraft Tailored Construction Solutions</title>
+  <meta name="description" content="Tailored architectural design, residential construction, commercial facilities, and project management.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- Preview Simulator Bar -->
+  <div class="preview-control-bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        BuildCraft Redesign &bull; Our Services Page
+      </span>
+      <div class="preview-viewports">
+        <button class="viewport-btn active" data-viewport="desktop">Desktop</button>
+        <button class="viewport-btn" data-viewport="tablet">Tablet (768px)</button>
+        <button class="viewport-btn" data-viewport="mobile">Mobile (390px)</button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <button id="theme-toggle-btn" class="theme-toggle-btn"><span>🌙</span> Dark Obsidian</button>
+    </div>
+  </div>
+
+  <div id="viewport-stage">
+    <!-- Navigation -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon-house">🏛️</div>
+            <div class="brand-title-group">
+              <span class="brand-title">BuildCraft</span>
+              <span class="brand-tagline">Build Better. Live Better.</span>
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item active"><a href="services.html">Services</a></li>
+              <li class="nav-item"><a href="portfolio.html">Projects</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-gold btn-sm">Get a Quote &rarr;</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-drawer-header" style="display:flex; justify-content:space-between; align-items:center;">
+          <div class="brand-logo">
+            <div class="brand-icon-house">🏛️</div>
+            <div class="brand-title-group">
+              <span class="brand-title">BuildCraft</span>
+              <span class="brand-tagline">Build Better. Live Better.</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" style="background:none; border:none; font-size:1.8rem; color:#fff; cursor:pointer;">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-gold" style="width: 100%; text-align: center;">Get a Free Quote &rarr;</a>
+      </div>
+    </aside>
+
+    <!-- HERO SECTION (Full-Page Hero Banner - Exact Attachment 1 Panel 3 Match) -->
+    <section class="subpage-hero-banner subpage-hero-services">
+      <div class="container container-wide">
+        <div class="subpage-hero-content">
+          <div class="badge-tag">Capabilities & Disciplines</div>
+          <h1 class="hero-arch-title">
+            Our Services &bull; <span class="serif-italic">Tailored Solutions for Every Need</span>
+          </h1>
+          <p class="hero-arch-desc" style="max-width: 680px;">
+            Comprehensive construction, structural engineering, and architectural design solutions engineered for luxury residential estates, corporate flagships, and commercial spaces.
+          </p>
+          <div class="hero-actions-row">
+            <a href="#services-list" class="btn btn-gold">Explore Disciplines &darr;</a>
+            <a href="contact.html" class="btn btn-secondary">Request Itemized Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services-list" style="padding: var(--space-5xl) 0; background: var(--bg-primary);">
+      <div class="container container-wide">
+        <div class="services-card-grid-6">
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" alt="Architectural Design">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Architectural Design</h3>
+                <p class="service-card-text">From schematic floorplans to photo-realistic 3D BIM models, our architectural team crafts timeless spaces.</p>
+              </div>
+              <a href="contact.html" class="service-card-link">Request Consultation &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" alt="Residential Construction">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Residential Construction</h3>
+                <p class="service-card-text">Custom luxury residences built with sustainable timber, reinforced concrete, and airtight insulation envelopes.</p>
+              </div>
+              <a href="contact.html" class="service-card-link">Request Consultation &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" alt="Commercial Construction">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Commercial Construction</h3>
+                <p class="service-card-text">Office campuses, boutique hotels, and retail flagships delivered with full regulatory and accessibility compliance.</p>
+              </div>
+              <a href="contact.html" class="service-card-link">Request Consultation &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Interior Design">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Interior Design</h3>
+                <p class="service-card-text">Curated spatial textures, Italian stonework, custom millwork, and balanced ambient lighting schemes.</p>
+              </div>
+              <a href="contact.html" class="service-card-link">Request Consultation &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" alt="Renovation & Remodeling">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Renovation & Remodeling</h3>
+                <p class="service-card-text">Modernizing historic properties and expanding existing footprints with zero structural compromise.</p>
+              </div>
+              <a href="contact.html" class="service-card-link">Request Consultation &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="Project Management">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Project Management</h3>
+                <p class="service-card-text">Comprehensive contractor coordination, material procurement, site inspections, and budget management.</p>
+              </div>
+              <a href="contact.html" class="service-card-link">Request Consultation &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:var(--space-4xl); background:#0f141f; border:1px solid var(--gold-border); border-radius:var(--radius-xl); padding:var(--space-2xl) var(--space-3xl); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:var(--space-lg);">
+          <div style="display:flex; align-items:center; gap:16px;">
+            <div class="brand-icon-house" style="font-size:1.6rem; width:52px; height:52px;">🏛️</div>
+            <div>
+              <h3 style="font-size:1.4rem; color:#fff; margin-bottom:4px;">Ready to start your project?</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Get a free consultation and itemized feasibility analysis today.</p>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-gold btn-lg">Get a Quote &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer-arch">
+      <div class="container container-wide">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+          <div>&copy; 2026 BuildCraft. All Rights Reserved.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="index.html" style="color:var(--text-secondary); text-decoration:none;">Home</a>
+            <a href="about.html" style="color:var(--text-secondary); text-decoration:none;">About</a>
+            <a href="portfolio.html" style="color:var(--text-secondary); text-decoration:none;">Projects</a>
+            <a href="contact.html" style="color:var(--gold-primary); text-decoration:none;">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

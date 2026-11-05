@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildCraft — Premium Architecture, Construction & Website Redesign</title>
+  <meta name="description" content="Transforming spaces, enriching lives. Premium construction, architectural design solutions, and modern digital experiences.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       PERSISTENT PREVIEW SIMULATOR TOOLBAR
+       ========================================================================== -->
+  <div class="preview-control-bar" role="toolbar" aria-label="Interactive Preview Bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        Live Interactive Redesign Prototype
+      </span>
+      <div class="preview-viewports" aria-label="Viewport Switcher">
+        <button class="viewport-btn active" data-viewport="desktop" title="Preview Desktop Mode">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          Desktop
+        </button>
+        <button class="viewport-btn" data-viewport="tablet" title="Preview Tablet Mode (768px)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Tablet (768px)
+        </button>
+        <button class="viewport-btn" data-viewport="mobile" title="Preview Mobile Mode (390px)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Mobile (390px)
+        </button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <span>🌙</span> Dark Obsidian
+      </button>
+    </div>
+  </div>
+
+  <!-- Stage Container for Viewport Simulation -->
+  <div id="viewport-stage">
+
+    <!-- ==========================================================================
+         PRIMARY SITE NAVIGATION
+         ========================================================================== -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo" aria-label="BuildCraft Home">
+            <div class="brand-icon-house">🏛️</div>
+            <div class="brand-title-group">
+              <span class="brand-title">BuildCraft</span>
+              <span class="brand-tagline">Build Better. Live Better.</span>
+            </div>
+          </a>
+
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item active"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item"><a href="services.html">Services</a></li>
+              <li class="nav-item"><a href="portfolio.html">Projects</a></li>
+              <li class="nav-item"><a href="#transformation">Before & After</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-gold btn-sm">Get a Quote &rarr;</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger" aria-label="Open Navigation Menu">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer" aria-label="Mobile Navigation">
+      <div>
+        <div class="mobile-drawer-header" style="display:flex; justify-content:space-between; align-items:center;">
+          <div class="brand-logo">
+            <div class="brand-icon-house">🏛️</div>
+            <div class="brand-title-group">
+              <span class="brand-title">BuildCraft</span>
+              <span class="brand-tagline">Build Better. Live Better.</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" style="background:none; border:none; font-size:1.8rem; color:#fff; cursor:pointer;">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
+          <li><a href="#transformation">Before & After</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-gold" style="width: 100%; text-align: center;">Get a Free Quote &rarr;</a>
+      </div>
+    </aside>
+
+    <!-- ==========================================================================
+         HERO SECTION (Full-Page Immersive Background Hero - Exact Attachment 1 Match)
+         ========================================================================== -->
+    <section id="hero" class="hero-architectural hero-home-fullwidth">
+      <div class="container container-wide">
+        <div class="hero-fullwidth-content">
+          <div class="badge-tag">Premium Construction & Design Solutions</div>
+          <h1 class="hero-arch-title">
+            Transforming Spaces, Enriching <span class="serif-italic">Lives</span>
+          </h1>
+          <p class="hero-arch-desc">
+            Premium construction, bespoke architectural design, and modern digital experiences crafted for a better tomorrow. Every space is built with uncompromising attention to detail, enduring quality, and timeless elegance.
+          </p>
+          <div class="hero-actions-row">
+            <a href="portfolio.html" class="btn btn-gold btn-lg">
+              Explore Our Work &rarr;
+            </a>
+            <a href="javascript:void(0)" id="hero-watch-video-btn" class="btn-video">
+              <div class="play-circle">▶</div>
+              <span>Watch Video</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Metrics Counter Row -->
+        <div class="hero-metrics-pill-bar">
+          <div class="metric-pill-item">
+            <div class="metric-pill-icon">🏛️</div>
+            <div>
+              <div class="metric-pill-val">500+</div>
+              <div class="metric-pill-label">Projects Completed</div>
+            </div>
+          </div>
+          <div class="metric-pill-item">
+            <div class="metric-pill-icon">⭐</div>
+            <div>
+              <div class="metric-pill-val">98%</div>
+              <div class="metric-pill-label">Client Satisfaction</div>
+            </div>
+          </div>
+          <div class="metric-pill-item">
+            <div class="metric-pill-icon">🛡️</div>
+            <div>
+              <div class="metric-pill-val">15+</div>
+              <div class="metric-pill-label">Years of Excellence</div>
+            </div>
+          </div>
+          <div class="metric-pill-item">
+            <div class="metric-pill-icon">⏱️</div>
+            <div>
+              <div class="metric-pill-val">100%</div>
+              <div class="metric-pill-label">On-Time Delivery</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ORGANIC CURVED SECTION TRANSITION -> WHITE/LIGHT CONTRAST SERVICES
+         ========================================================================== -->
+    <section id="services" class="section-light-contrast">
+      <div class="container container-wide">
+        <div class="section-header text-left" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; margin-bottom:var(--space-3xl);">
+          <div>
+            <div class="badge-tag" style="background:rgba(229,169,60,0.15); border-color:var(--gold-secondary);">Our Services</div>
+            <h2 class="section-title" style="color:#0f172a;">Comprehensive Construction Services</h2>
+            <p class="section-desc" style="color:#475569; max-width:640px;">
+              From concept to completion, we deliver exceptional quality, unmatched attention to detail, and enduring architectural value.
+            </p>
+          </div>
+          <a href="services.html" class="btn btn-gold btn-sm">View All Services &rarr;</a>
+        </div>
+
+        <!-- 6-Card Services Grid -->
+        <div class="services-card-grid-6">
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" alt="Architectural Design">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Architectural Design</h3>
+                <p class="service-card-text">Bespoke blueprints, spatial modeling, and contemporary structural plans tailored to your land and lifestyle.</p>
+              </div>
+              <a href="services.html" class="service-card-link">Learn More &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" alt="Residential Construction">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Residential Construction</h3>
+                <p class="service-card-text">Custom luxury homes built with premium sustainable materials, seismic stability, and immaculate finishes.</p>
+              </div>
+              <a href="services.html" class="service-card-link">Learn More &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" alt="Commercial Construction">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Commercial Construction</h3>
+                <p class="service-card-text">Corporate headquarters, retail flagships, and commercial facilities engineered for peak operational workflow.</p>
+              </div>
+              <a href="services.html" class="service-card-link">Learn More &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Interior Design">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Interior Design</h3>
+                <p class="service-card-text">Harmonious material selections, acoustic treatments, luxury custom millwork, and warm ambient lighting.</p>
+              </div>
+              <a href="services.html" class="service-card-link">Learn More &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" alt="Renovation & Remodeling">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Renovation & Remodeling</h3>
+                <p class="service-card-text">Elevating outdated spaces with modern structural expansions, high-efficiency glazing, and pristine finishes.</p>
+              </div>
+              <a href="services.html" class="service-card-link">Learn More &rarr;</a>
+            </div>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-thumb">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="Project Management">
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Project Management</h3>
+                <p class="service-card-text">Transparent milestone oversight, budget governance, permit acquisition, and quality assurance inspections.</p>
+              </div>
+              <a href="services.html" class="service-card-link">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BEFORE & AFTER INTERACTIVE SPLIT COMPARISON SLIDER
+         ========================================================================== -->
+    <section id="transformation" class="transformation-section" style="padding:var(--space-5xl) 0; background:var(--bg-secondary);">
+      <div class="container container-wide">
+        <div class="section-header">
+          <div class="badge-tag">The Transformation</div>
+          <h2 class="section-title">From Dated & Cluttered to <span class="text-gold">Sleek & Prestigious</span></h2>
+          <p class="section-desc">
+            Drag the interactive handle below to compare the client's conventional, fatigued site structure with our elevated, high-conversion modern architectural redesign.
+          </p>
+        </div>
+
+        <div class="comparison-card">
+          <div id="comparison-slider" class="slider-container" title="Drag to compare before and after">
+            <div class="slider-img slider-img-before">
+              <span class="badge-tag-before" style="position:absolute; top:20px; right:20px; background:#ef4444; color:#fff; padding:6px 14px; border-radius:9999px; font-weight:700; z-index:5;">
+                Before: Dated & Fatigued
+              </span>
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1400&auto=format&fit=crop" 
+                   alt="Before Redesign - Fatigued Layout">
+            </div>
+
+            <div id="slider-after-layer" class="slider-img-after">
+              <span class="badge-tag-after" style="position:absolute; top:20px; left:20px; background:var(--gold-primary); color:#000; padding:6px 14px; border-radius:9999px; font-weight:700; z-index:5;">
+                After: BuildCraft Modern Redesign
+              </span>
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop" 
+                   alt="After Redesign - Modern Luxury Architectural Layout">
+            </div>
+
+            <div id="slider-handle" class="slider-handle" aria-hidden="true">↔</div>
+          </div>
+
+          <div class="comparison-features-grid">
+            <div class="feature-box" style="background:var(--bg-card); padding:var(--space-lg); border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+              <div class="feature-box-icon" style="color:var(--gold-primary); font-size:1.4rem; margin-bottom:8px;">Aa</div>
+              <h3 style="font-size:1.15rem; margin-bottom:6px;">Refined Typography</h3>
+              <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6;">
+                Replaced generic body text with Plus Jakarta Sans & Playfair Display accents for effortless readability and high-ticket trust.
+              </p>
+            </div>
+            <div class="feature-box" style="background:var(--bg-card); padding:var(--space-lg); border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+              <div class="feature-box-icon" style="color:var(--gold-primary); font-size:1.4rem; margin-bottom:8px;">🎨</div>
+              <h3 style="font-size:1.15rem; margin-bottom:6px;">Cohesive Golden Hour Palette</h3>
+              <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6;">
+                Unified dark obsidian canvas with warm golden architectural lighting and crisp off-white contrast sections.
+              </p>
+            </div>
+            <div class="feature-box" style="background:var(--bg-card); padding:var(--space-lg); border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+              <div class="feature-box-icon" style="color:var(--gold-primary); font-size:1.4rem; margin-bottom:8px;">📐</div>
+              <h3 style="font-size:1.15rem; margin-bottom:6px;">8-Point Grid Spacing</h3>
+              <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6;">
+                Strict spatial rhythm providing breathing room, zero awkward shifts, and fluid cross-device responsiveness.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SIGNATURE PROJECTS SECTION (Attachment 1 Match)
+         ========================================================================== -->
+    <section id="portfolio" class="signature-projects-section">
+      <div class="container container-wide">
+        <div class="projects-header-row">
+          <div>
+            <div class="badge-tag">Our Portfolio</div>
+            <h2 class="section-title">Our Signature Projects</h2>
+            <p class="section-desc" style="max-width:580px;">
+              Explore our latest architectural achievements and witness the precision engineering we deliver.
+            </p>
+          </div>
+          <div style="display:flex; align-items:center; gap:16px;">
+            <a href="portfolio.html" class="btn btn-secondary btn-sm">View All Projects &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Featured Project Panoramic Showcase Frame -->
+        <div class="projects-slider-frame">
+          <img id="carousel-img" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop" 
+               alt="Signature Luxury Villa with Reflection Pool">
+          <div class="projects-nav-controls">
+            <button class="carousel-nav-btn" onclick="prevProject()" aria-label="Previous Project">&larr;</button>
+            <button class="carousel-nav-btn" onclick="nextProject()" aria-label="Next Project">&rarr;</button>
+          </div>
+          <div style="position:absolute; bottom:24px; left:24px; background:rgba(10,13,20,0.85); backdrop-filter:blur(16px); padding:16px 24px; border-radius:var(--radius-md); border:1px solid var(--gold-border);">
+            <div style="color:var(--gold-primary); font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase;">Residential &bull; Beverly Hills, CA</div>
+            <strong id="carousel-title" style="font-size:1.3rem; color:#fff;">The Horizon Glass Residence</strong>
+          </div>
+        </div>
+
+        <!-- BLUEPRINT CALL TO ACTION STRIP -->
+        <div class="blueprint-cta-strip">
+          <div class="blueprint-cta-left">
+            <div class="cta-helmet-icon">👷</div>
+            <div>
+              <h3 class="blueprint-cta-title">Let's Build Your Dream Together</h3>
+              <p class="blueprint-cta-sub">Get in touch with our expert architectural and development team for a free consultation.</p>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-gold btn-lg">Get a Quote &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SITE FOOTER
+         ========================================================================== -->
+    <footer class="site-footer-arch">
+      <div class="container container-wide">
+        <div class="footer-arch-grid">
+          <div>
+            <div class="brand-logo" style="margin-bottom:16px;">
+              <div class="brand-icon-house">🏛️</div>
+              <div class="brand-title-group">
+                <span class="brand-title">BuildCraft</span>
+                <span class="brand-tagline">Build Better. Live Better.</span>
+              </div>
+            </div>
+            <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.7; max-width:320px; margin-bottom:16px;">
+              Transforming spaces and enriching lives through high-end architectural design, construction, and premium digital solutions.
+            </p>
+            <div style="font-size:0.8rem; color:var(--gold-primary); font-family:var(--font-mono);">
+              NEW YORK &bull; ZURICH &bull; LONDON
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.1em; color:#fff; margin-bottom:16px;">Quick Links</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:10px;">
+              <li><a href="index.html" style="color:var(--text-secondary); text-decoration:none;">Home</a></li>
+              <li><a href="about.html" style="color:var(--text-secondary); text-decoration:none;">About</a></li>
+              <li><a href="services.html" style="color:var(--text-secondary); text-decoration:none;">Services</a></li>
+              <li><a href="portfolio.html" style="color:var(--text-secondary); text-decoration:none;">Projects</a></li>
+              <li><a href="contact.html" style="color:var(--text-secondary); text-decoration:none;">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.1em; color:#fff; margin-bottom:16px;">Services</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:10px;">
+              <li><a href="services.html" style="color:var(--text-secondary); text-decoration:none;">Architectural Design</a></li>
+              <li><a href="services.html" style="color:var(--text-secondary); text-decoration:none;">Residential Construction</a></li>
+              <li><a href="services.html" style="color:var(--text-secondary); text-decoration:none;">Commercial Projects</a></li>
+              <li><a href="contact.html" style="color:var(--text-secondary); text-decoration:none;">Free Consultation</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.1em; color:#fff; margin-bottom:16px;">Follow Us</h4>
+            <div style="display:flex; gap:12px; margin-bottom:16px;">
+              <span style="display:inline-flex; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.06); align-items:center; justify-content:center; color:var(--gold-primary);">f</span>
+              <span style="display:inline-flex; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.06); align-items:center; justify-content:center; color:var(--gold-primary);">in</span>
+              <span style="display:inline-flex; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.06); align-items:center; justify-content:center; color:var(--gold-primary);">ig</span>
+            </div>
+            <p style="font-size:0.8rem; color:var(--text-muted);">
+              ISO 9001 Certified &bull; Guaranteed Quality
+            </p>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; padding-top:var(--space-lg); border-top:1px solid var(--border-subtle); font-size:0.8rem; color:var(--text-muted); flex-wrap:wrap; gap:12px;">
+          <div>&copy; 2026 BuildCraft. All Rights Reserved.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="index.html" style="color:var(--text-muted); text-decoration:none;">Home</a>
+            <a href="portfolio.html" style="color:var(--text-muted); text-decoration:none;">Projects</a>
+            <a href="contact.html" style="color:var(--gold-primary); text-decoration:none;">Get Quote</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- End #viewport-stage -->
+
+  <!-- ==========================================================================
+       NATIVE HTML5 ARCHITECTURAL TOUR VIDEO MODAL (No YouTube Redirection!)
+       ========================================================================== -->
+  <div id="video-modal" class="video-modal-overlay" role="dialog" aria-modal="true" aria-label="Architectural Tour Video">
+    <div class="video-modal-box">
+      <div class="video-modal-header">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="color:var(--gold-primary); font-size:1.1rem;">🎬</span>
+          <strong style="color:#fff; font-size:0.95rem;">BuildCraft Architectural Walkthrough Tour</strong>
+        </div>
+        <button id="video-modal-close" class="video-modal-close-btn" aria-label="Close Video">&times;</button>
+      </div>
+      <div class="video-responsive-wrap">
+        <video id="architectural-video" src="assets/video/buildcraft-tour.mp4" controls playsinline preload="auto" poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop" style="width:100%; height:auto; max-height:72vh; display:block; background:#000;">
+          <source src="assets/video/buildcraft-tour.mp4" type="video/mp4">
+          <source src="https://raw.githubusercontent.com/lhlGitHub/threejs-architecture-effects/master/assets/preview.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Project Carousel
+    const projects = [
+      { img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop', title: 'The Horizon Glass Residence' },
+      { img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop', title: 'Sovereign Mountain Villa' },
+      { img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop', title: 'Nexus Commercial Tower' }
+    ];
+    let curProject = 0;
+    function nextProject() {
+      curProject = (curProject + 1) % projects.length;
+      updateProject();
+    }
+    function prevProject() {
+      curProject = (curProject - 1 + projects.length) % projects.length;
+      updateProject();
+    }
+    function updateProject() {
+      const img = document.getElementById('carousel-img');
+      const title = document.getElementById('carousel-title');
+      if (img) img.src = projects[curProject].img;
+      if (title) title.textContent = projects[curProject].title;
+    }
+  </script>
+</body>
+</html>
